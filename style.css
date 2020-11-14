@@ -5,8 +5,7 @@ body {
   font-size: 16px;
   line-height: 32px;
   color: #222222;
-  background-color: #f2f4f6;
-  background-image: url("img/hero-bg.jpg");
+  background: #f2f4f6 url("img/hero-bg.jpg") ;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -116,6 +115,10 @@ body {
 
 .skill-css {
   background-image: url("img/icon-css.svg");
+}
+
+.skill-js {
+  background: url("img/icon-js.svg") 22px/24px;
 }
 
 .level {
