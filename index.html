@@ -3,16 +3,31 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Портфолио Junior верстальщика</title>
   </head>
 
   <body>
     <header class="page-header">
-      <div class="container">
-        <a class="header-email" href="mailto: Ilia.Kozionov@yandex.ru"> Ilia.Kozionov@yandex.ru</a>
-        <a class="header-phone" href="tel: +7-922-027-73-89 ">+7-922-027-73-89 </a>
-      </div>
+	<nav class="nav">
+		<div class="contacts">
+			<div class="container">
+				<a class="header-email" href="mailto: Ilia.Kozionov@yandex.ru"> Ilia.Kozionov@yandex.ru</a>
+        		<a class="header-phone" href="tel: +7-922-027-73-89 ">+7-922-027-73-89 </a>
+			</div>		
+		</div>
+		<div class="navbar-line">
+			<div class="container">
+				<ul class="navbar">
+					<li class="nav__item"><a href="#aboutMe">Обо мне</a></li>
+					<li class="nav__item"><a href="#kindJobs">Виды работ</a></li>
+					<li class="nav__item"><a href="#skills">Навыки</a></li>
+					<li class="nav__item"><a href="#portfolio">Портфолио</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
     </header>
 
     <section class="hero-image">
@@ -26,14 +41,14 @@
       <div class="container">
         <h2 class="subheading">Давайте познакомимся</h2>
         <figure class="user-image">
-            <img src="files/my photo.jpg" alt="Моя фотография, на которой я рад вам" width="100%">
+            <img src="files/my photo(mono).jpg" alt="Моя фотография, на которой я рад вам" width="100%">
         </figure>
-      <h3>Пара слов о себе</h3>
+      <h3 id="aboutMe">Пара слов о себе</h3>
      <p><b>Привееет! Меня зовут Илья</b> <br />&nbsp Я люблю Вселенную Звёздных Войн, средневековую музыку и читать книги, но самое главное - я  <wbr>люблю </wbr> что-то создавать. Создавать себя, 
       свою жизнь, объекты искусства, по-моему это прекрасно! И теперь я учусь создавать сайты. <br />&nbsp Знаю, впереди непростая дорога, но я искренне верю, что если приложить достаточно усилий, 
       терпения и знаний, то всё получится.  В детстве я читал много книг про приключения, теперь настало время отправится в своё! 
     </p>
-      <h3>Чем могу быть полезен</h3>
+      <h3 id="kindJobs">Чем могу быть полезен</h3>
         <ul>
           <li>Могу написать HTML разметку и прописать стили</li>
           <li>Могу помочь с написанием JS кода</li>
@@ -43,8 +58,8 @@
           <li>Могу сверстать страницу по макету</li>
         </ul>
 
-        <div class="skills">
-          <h3>Мои навыки</h3>
+        <div class="skills" id="skills">
+          <h3>Навыки</h3>
           <dl class="skills-list">
             <dt class="skill-html">HTML</dt>
             <dd class="level"><div style="width: 75%;">75%</div></dd>
@@ -57,22 +72,35 @@
       </div>
     </section>
 
-    <section class="portfolio">
-      <div class="container">
-         <h2 class="subheading">Мои работы</h2>
-
-      <figure class="project-image">
-        <img src="files/project.jpg" alt="Keks site" width="75%">
-      </figure>
-      <h3>Сайт инструктора Кекса</h3>
-      <p>Небольшой лендинг о школе для начинающих.</p>
-      <a class="button" href="source/project/index.html">Открыть страницу</a>
-
-      <h3>Блог начинающего верстальщика</h3>
-      <p>Статический блог про обучение HTML и CSS.</p>
-      </div>
-    </section>
-
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="subheading">Моё портфолио</h2>
+        <ul class="projects">
+            <li>
+                <div class="row">
+                    <figure class="project-image">
+                        <img src="files/project.jpg" alt="Keks site">
+                    </figure>
+                    <div class="flex-item">
+                        <h3>Сайт инструктора Кекса</h3>
+                        <p>Небольшой лендинг о школе для начинающих.</p>
+                        <a class="button" href="source/project/index.html">Открыть страницу</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <figure class="project-image">
+                    </figure>
+                    <div class="flex-item">
+                        <h3>Блог начинающего верстальщика</h3>
+                        <p>Статический блог про обучение HTML и CSS.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
     <footer class="page-footer">
       <div class="container">
         <a class="footer-email" href="mailto: Ilia.Kozionov@yandex.ru"> Ilia.Kozionov@yandex.ru</a>
