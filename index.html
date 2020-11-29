@@ -1,111 +1,92 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-    <title>Портфолио Junior верстальщика</title>
-  </head>
+    <title>Kozionov.Portfolio</title>
+</head>
 
-  <body>
-    <header class="page-header">
-	<nav class="nav">
-		<div class="contacts">
-			<div class="container">
-				<a class="header-email" href="mailto: Ilia.Kozionov@yandex.ru"> Ilia.Kozionov@yandex.ru</a>
-        		<a class="header-phone" href="tel: +7-922-027-73-89 ">+7-922-027-73-89 </a>
-			</div>		
-		</div>
-		<div class="navbar-line">
-			<div class="container">
-				<ul class="navbar">
-					<li class="nav__item"><a href="#aboutMe">Обо мне</a></li>
-					<li class="nav__item"><a href="#kindJobs">Виды работ</a></li>
-					<li class="nav__item"><a href="#skills">Навыки</a></li>
-					<li class="nav__item"><a href="#portfolio">Портфолио</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-    </header>
-
-    <section class="hero-image">
-      <div class="container">
-        <h1 class="heading">Козионов Илья</h1>
-      <p>Junior верстальщик</p>
-      </div>
-    </section>
-
-    <section class="intro">
-      <div class="container">
-        <h2 class="subheading">Давайте познакомимся</h2>
-        <figure class="user-image">
-            <img src="files/my photo(mono).jpg" alt="Моя фотография, на которой я рад вам" width="100%">
-        </figure>
-      <h3 id="aboutMe">Пара слов о себе</h3>
-     <p><b>Привееет! Меня зовут Илья</b> <br />&nbsp Я люблю Вселенную Звёздных Войн, средневековую музыку и читать книги, но самое главное - я  <wbr>люблю </wbr> что-то создавать. Создавать себя, 
-      свою жизнь, объекты искусства, по-моему это прекрасно! И теперь я учусь создавать сайты. <br />&nbsp Знаю, впереди непростая дорога, но я искренне верю, что если приложить достаточно усилий, 
-      терпения и знаний, то всё получится.  В детстве я читал много книг про приключения, теперь настало время отправится в своё! 
-    </p>
-      <h3 id="kindJobs">Чем могу быть полезен</h3>
-        <ul>
-          <li>Могу написать HTML разметку и прописать стили</li>
-          <li>Могу помочь с написанием JS кода</li>
-          <li>Могу написать свой JS код</li>
-          <li>Могу отточить свои навыки на вашем проекте, если вы очень устали</li>
-          <li>Могу участвовать в реализации проекта</li>
-          <li>Могу сверстать страницу по макету</li>
-        </ul>
-
-        <div class="skills" id="skills">
-          <h3>Навыки</h3>
-          <dl class="skills-list">
-            <dt class="skill-html">HTML</dt>
-            <dd class="level"><div style="width: 75%;">75%</div></dd>
-            <dt class="skill-css">CSS</dt>
-            <dd class="level"><div style="width: 50%;">50%</div></dd>
-            <dt class="skill-js">JS</dt>
-            <dd class="level"><div style="width: 23%;">23%</div></dd>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-<section class="portfolio" id="portfolio">
+<body>
+<div class="navbar-line">
     <div class="container">
-        <h2 class="subheading">Моё портфолио</h2>
-        <ul class="projects">
-            <li>
-                <div class="row">
-                    <figure class="project-image">
-                        <img src="files/project.jpg" alt="Keks site">
-                    </figure>
-                    <div class="flex-item">
-                        <h3>Сайт инструктора Кекса</h3>
-                        <p>Небольшой лендинг о школе для начинающих.</p>
-                        <a class="button" href="source/project/index.html">Открыть страницу</a>
-                    </div>
-                </div>
+        <ul class="navbar">
+            <li class="navbar-item">
+            	<a href="#aboutMe">Обо мне</a>
             </li>
-            <li>
-                <div class="row">
-                    <figure class="project-image">
-                    </figure>
-                    <div class="flex-item">
-                        <h3>Блог начинающего верстальщика</h3>
-                        <p>Статический блог про обучение HTML и CSS.</p>
-                    </div>
-                </div>
+            <li class="navbar-item">
+            	<a href="#jobKinds">Виды работ</a>
+            </li>
+            <li class="navbar-item">
+            	<a href="#skills">Навыки</a>
+            </li>
+            <li class="navbar-item">
+            	<a href="#portfolio">Портфолио</a>
             </li>
         </ul>
     </div>
-</section>
-    <footer class="page-footer">
-      <div class="container">
-        <a class="footer-email" href="mailto: Ilia.Kozionov@yandex.ru"> Ilia.Kozionov@yandex.ru</a>
-        <a class="footer-phone" href="tel: +7-922-027-73-89 ">+7-922-027-73-89 </a>
-      </div>
-    </footer>
-  </body>
+</div>    <header class="page-header">
+        <div class="container">
+            <h1 class="header-title">Козионов Илья</h1>
+            <h3 class="header-subtitle">Junior верстальщик</h3>
+        </div>
+    </header>
+    <section class="card container about-me" id="aboutMe"> 
+            <h2 class="card__title card-title">Пара слов о себе</h2>
+            <div class="flex">
+            <p class="card__content card-content">
+                <b>Привееет! Меня зовут Илья</b> <br />&nbsp Я люблю Вселенную Звёздных Войн, средневековую музыку и читать книги, но самое главное - я <wbr>люблю </wbr> что-то создавать. Создавать себя,
+                свою жизнь, объекты искусства, по-моему это прекрасно! И теперь я учусь создавать сайты. <br />&nbsp Знаю, впереди непростая дорога, но я искренне верю, что если приложить достаточно усилий,
+                терпения и знаний, то всё получится. В детстве я читал много книг про приключения, теперь настало время отправится в своё!
+            </p>
+        </div>
+    </section>
+    <section class="card container" id="jobKinds">
+        <div class="flex-item">
+            <h2 class="card__title card-title">Чем могу быть полезен</h2>
+	          <ul class="card__content card-content">
+		          <li>Могу написать HTML разметку и прописать стили</li>
+		          <li>Могу помочь с написанием JS кода</li>
+		          <li>Могу написать свой JS код</li>
+		          <li>Могу отточить свои навыки на вашем проекте, если вы очень устали</li>
+		          <li>Могу участвовать в реализации проекта</li>
+		          <li>Могу сверстать страницу по макету</li>
+	        </ul>
+        </div>
+    </section>
+    <section class="card container skills" id="skills">
+            <h2 class="card__title card-title">Навыки</h2>
+             <dl class="skills-list card__content card-content">
+                <dt class="skill-html">HTML</dt>
+                <dd class="level"><div style="width: 75%;">75%</div></dd>
+                <dt class="skill-css">CSS</dt>
+                <dd class="level"><div style="width: 63%;">63%</div></dd>
+                <dt class="skill-js">JS</dt>
+                <dd class="level"><div style="width: 37%;">37%</div></dd>
+              </dl>
+    </section>
+    <section class="card portfolio container" id="portfolio">
+        <h2 class="card__title card-title">Портфолио</h2>
+        <div class="flex">
+            <a class="portfolio__card project" href="source/project/index.html">
+                <h3 class="portfolio__title">Сайт инструктора Кекса</h3>
+            </a>
+            <a class="portfolio__card">
+                <h3  class="portfolio__title">Блог начинающего верстальщика</h3>
+            </a>
+        </div>
+    </section>
+<footer class="page-footer">
+	<div class="container">
+		<div class="flex">
+			<a class="footer-email" href="mailto: Ilia.Kozionov@yandex.ru"> Ilia.Kozionov@yandex.ru</a>
+        	<a class="footer-phone" href="tel: +7-922-027-73-89 ">+7-922-027-73-89 </a>
+        	<a href="https://vk.com/id241326744" class="shared link-vk"></a>
+        	<a href="https://github.com/Pardjai" class="shared link-git"></a>
+		</div>
+	</div>
+</footer>
+</body>
+
 </html>
